@@ -1,0 +1,44 @@
+{
+  "name": "geolocation-api",
+  "version": "1.0.0",
+  "description": "GeoLocation API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node ./index",
+    "transpile": "babel ./ --out-dir dist-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anilsnl/geolocation-api.git"
+  },
+  "keywords": [
+    "getlocation"
+  ],
+  "author": "Anil Senel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anilsnl/geolocation-api/issues"
+  },
+  "homepage": "https://github.com/anilsnl/geolocation-api#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongo": "^0.1.0",
+    "morgan": "^1.10.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.4",
+    "nodemon": "^2.0.7",
+    "rimraf": "^3.0.2"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
